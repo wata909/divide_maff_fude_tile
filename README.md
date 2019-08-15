@@ -23,3 +23,8 @@ GDAL/OGR, awkが必要
 - 分割するタイルのサイズを指定できるといいな
 - ファイル名によらず、タイルに区切れるといいのかしら？
 	- bboxを読んできてやればいいんだろうけど、算数が出来ませんw
+
+## ライセンス
+スクリプトは[Unlicense](https://unlicense.org/)
+
+分割対象データである[農地の区画情報（筆ポリゴン）](http://www.maff.go.jp/j/tokei/porigon/)については、[筆ポリゴンの利用規約（PDF : 114KB）](http://www.maff.go.jp/j/tokei/porigon/attach/pdf/index-23.pdf)とする。
