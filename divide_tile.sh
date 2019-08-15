@@ -46,7 +46,7 @@ do
       echo $lon_min  $lat_min $lon_max $lat_max # bbox 確認
       
       #クリップを実行
-      ogr2ogr -spat $lon_min  $lat_min $lon_max $lat_max -lco ENCODING=UTF-8 -oo ENCODING=UTF-8 -f "ESRI Shapefile" ./${i:5:1}_${i:7:3}_${i:11:2}/tile${zoom}_${X}_${Y}.shp $i
+      ogr2ogr -spat $lon_min  $lat_min $lon_max $lat_max -lco ENCODING=UTF-8 -oo ENCODING=CP932 -f "ESRI Shapefile" ./${i:5:1}_${i:7:3}_${i:11:2}/tile${zoom}_${X}_${Y}.shp $i
       
       Y=`echo $(($Y+1))`
     done
